@@ -61,13 +61,18 @@ The output is a **soul document** — a behavioral specification that captures h
 2. You'll receive a ZIP file containing `conversations.json`
 3. Convert `conversations.json` to a single markdown file. Tools exist for this (search "ChatGPT export to markdown") — the script expects a format where each conversation has `**Date:**` and `**Conversation ID:**` header lines.
 
+**Claude (claude.ai / Claude Desktop):**
+1. Settings → Account → Export Data
+2. You'll receive a ZIP containing `conversations.json`
+3. Run `convert_claude.py` (included in this repo) to convert it to markdown
+4. Then run `split_conversations.py` on the output
+
 **Other platforms:**
 
 | Platform | Export method | Notes |
 |---|---|---|
-| Claude (claude.ai) | Not available via UI — use browser export tools or copy/paste | Manual assembly required |
-| Gemini | Google Takeout → select Google Chat or Gemini history | JSON format; needs conversion script (see [Adapting for Other Formats](#adapting-for-other-formats)) |
-| Grok | Check X/Twitter settings for data export | Format varies |
+| Gemini | Google Takeout → select Gemini history | JSON format; needs conversion script (community contribution welcome) |
+| Grok | X/Twitter Settings → Data export | Format varies |
 
 > **All platforms:** The goal is one `.md` file where conversations are separated by a consistent boundary pattern. The script's detection logic is configurable — see `split_conversations.py` for details.
 
@@ -167,7 +172,8 @@ For other platforms:
 ```
 companion-portrait/
 ├── README.md                              # this file
-├── split_conversations.py                 # chunker — configure and run first
+├── convert_claude.py                      # step 1 (Claude exports): JSON → markdown
+├── split_conversations.py                 # step 2: markdown → numbered chunks
 ├── AGENT-INSTRUCTIONS.md                  # analysis instructions for AI agents
 └── templates/
     ├── AGENT-CHUNK-TASK-template.md       # template for chunk analysis tasks
