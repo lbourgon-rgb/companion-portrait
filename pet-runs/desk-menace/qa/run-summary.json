@@ -1,0 +1,11 @@
+{
+  "ok": true,
+  "run_dir": "C:\\Users\\Allen\\Mini-pc-repo\\codex-portrait\\pet-runs\\desk-menace",
+  "spritesheet": "C:\\Users\\Allen\\Mini-pc-repo\\codex-portrait\\pet-runs\\desk-menace\\final\\spritesheet.webp",
+  "validation": "C:\\Users\\Allen\\Mini-pc-repo\\codex-portrait\\pet-runs\\desk-menace\\final\\validation.json",
+  "contact_sheet": "C:\\Users\\Allen\\Mini-pc-repo\\codex-portrait\\pet-runs\\desk-menace\\qa\\contact-sheet.png",
+  "review": "C:\\Users\\Allen\\Mini-pc-repo\\codex-portrait\\pet-runs\\desk-menace\\qa\\review.json",
+  "package": "C:\\Users\\Allen\\.codex\\pets\\desk-menace",
+  "visual_qa": "pass",
+  "qa_note": "Contact sheet visually checked; repaired running-left after initial mirror crowding; final rows preserve identity and validate cleanly."
+}

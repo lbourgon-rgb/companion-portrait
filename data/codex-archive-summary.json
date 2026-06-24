@@ -1,0 +1,364 @@
+{
+  "summary": {
+    "codex_home": "C:\\Users\\Allen\\.codex",
+    "session_index_entries": 39,
+    "memory_files": {
+      "MEMORY.md": true,
+      "memory_summary.md": true,
+      "raw_memories.md": true,
+      "rollout_summary_files": 31
+    },
+    "ambient_suggestion_files": 4,
+    "pet_files": 0,
+    "pet_dirs": 0
+  },
+  "logs": {
+    "total_logs": 56078,
+    "by_level": [
+      {
+        "level": "TRACE",
+        "count": 24099
+      },
+      {
+        "level": "INFO",
+        "count": 20430
+      },
+      {
+        "level": "DEBUG",
+        "count": 10381
+      },
+      {
+        "level": "WARN",
+        "count": 1162
+      },
+      {
+        "level": "ERROR",
+        "count": 6
+      }
+    ],
+    "top_targets": [
+      {
+        "target": "codex_otel.log_only",
+        "count": 9286
+      },
+      {
+        "target": "codex_otel.trace_safe",
+        "count": 9262
+      },
+      {
+        "target": "codex_api::endpoint::responses_websocket",
+        "count": 9181
+      },
+      {
+        "target": "log",
+        "count": 7642
+      },
+      {
+        "target": "opentelemetry_sdk",
+        "count": 6172
+      },
+      {
+        "target": "hyper_util::client::legacy::pool",
+        "count": 3040
+      },
+      {
+        "target": "codex_app_server::message_processor",
+        "count": 1854
+      },
+      {
+        "target": "codex_config::loader::layer_io",
+        "count": 1566
+      },
+      {
+        "target": "hyper_util::client::legacy::client",
+        "count": 1307
+      },
+      {
+        "target": "hyper_util::client::legacy::connect::http",
+        "count": 1302
+      },
+      {
+        "target": "rmcp::service",
+        "count": 930
+      },
+      {
+        "target": "codex_rmcp_client::stdio_server_launcher",
+        "count": 698
+      },
+      {
+        "target": "codex_api::sse::responses",
+        "count": 664
+      },
+      {
+        "target": "codex_client::custom_ca",
+        "count": 618
+      },
+      {
+        "target": "codex_core_plugins::manifest",
+        "count": 550
+      },
+      {
+        "target": "codex_core::stream_events_utils",
+        "count": 232
+      },
+      {
+        "target": "codex_core_skills::loader",
+        "count": 228
+      },
+      {
+        "target": "codex_app_server::outgoing_message",
+        "count": 184
+      },
+      {
+        "target": "rmcp::transport::streamable_http_client",
+        "count": 124
+      },
+      {
+        "target": "codex_core::session::handlers",
+        "count": 113
+      }
+    ],
+    "top_threads_by_log_count": [
+      {
+        "thread_id": "019e08f4-c713-71f2-9909-c3da7dd482ac",
+        "log_count": 1000,
+        "min_ts": 1779322666,
+        "max_ts": 1779407613
+      },
+      {
+        "thread_id": "019e0ce1-b1ab-76d3-ab8d-22ce3503a1a2",
+        "log_count": 1000,
+        "min_ts": 1778636697,
+        "max_ts": 1779024964
+      },
+      {
+        "thread_id": "019e1d0d-4469-7a51-93b9-6787ac8001bf",
+        "log_count": 1000,
+        "min_ts": 1778604214,
+        "max_ts": 1778606026
+      },
+      {
+        "thread_id": "019e1d0d-e6ec-7da0-b4c7-7039c3b250e5",
+        "log_count": 1000,
+        "min_ts": 1778604950,
+        "max_ts": 1778604981
+      },
+      {
+        "thread_id": "019e240a-1c01-7480-a7db-1ae80f75eb7f",
+        "log_count": 1000,
+        "min_ts": 1778763387,
+        "max_ts": 1778763400
+      },
+      {
+        "thread_id": "019e240a-891f-7792-b985-18e5a38ea9ec",
+        "log_count": 1000,
+        "min_ts": 1778721282,
+        "max_ts": 1778721319
+      },
+      {
+        "thread_id": "019e2709-65d1-7910-a718-2a808d931b5d",
+        "log_count": 1000,
+        "min_ts": 1778771577,
+        "max_ts": 1778773383
+      },
+      {
+        "thread_id": "019e2711-ae5e-7161-95f5-28cf19a58763",
+        "log_count": 1000,
+        "min_ts": 1778811644,
+        "max_ts": 1778811652
+      },
+      {
+        "thread_id": "019e2712-1ddc-7d52-b1db-745cbfdd2f3d",
+        "log_count": 1000,
+        "min_ts": 1778772172,
+        "max_ts": 1778773978
+      },
+      {
+        "thread_id": "019e27dd-81f5-7aa2-ab78-b54f382a2271",
+        "log_count": 1000,
+        "min_ts": 1778785465,
+        "max_ts": 1778785479
+      },
+      {
+        "thread_id": "019e2c3e-ce81-7010-ad66-5d0fd138c5d9",
+        "log_count": 1000,
+        "min_ts": 1778858973,
+        "max_ts": 1778858977
+      },
+      {
+        "thread_id": "019e2c6c-ce2d-7352-a4ad-497ba4610871",
+        "log_count": 1000,
+        "min_ts": 1778971359,
+        "max_ts": 1778972004
+      },
+      {
+        "thread_id": "019e2c6e-0ab4-7dc0-94cd-224e64c3bf9e",
+        "log_count": 1000,
+        "min_ts": 1778862059,
+        "max_ts": 1778863866
+      },
+      {
+        "thread_id": "019e2d56-4aee-7a03-8d24-b11128a00b4c",
+        "log_count": 1000,
+        "min_ts": 1778877195,
+        "max_ts": 1778877201
+      },
+      {
+        "thread_id": "019e31ad-5b61-7840-a890-fa97d27d7a4a",
+        "log_count": 1000,
+        "min_ts": 1778950139,
+        "max_ts": 1778951945
+      },
+      {
+        "thread_id": "019e3626-efcb-7e52-a4fa-cd0e762f310d",
+        "log_count": 1000,
+        "min_ts": 1779025006,
+        "max_ts": 1779025582
+      },
+      {
+        "thread_id": "019e3627-1baf-7852-a670-b439d32a4a26",
+        "log_count": 1000,
+        "min_ts": 1779408302,
+        "max_ts": 1779408311
+      },
+      {
+        "thread_id": "019e362b-6e60-7371-a0d4-efe58cbe43df",
+        "log_count": 1000,
+        "min_ts": 1779025369,
+        "max_ts": 1779025377
+      },
+      {
+        "thread_id": "019e3630-2fb3-7d62-87f2-840d04f94f0b",
+        "log_count": 1000,
+        "min_ts": 1779025650,
+        "max_ts": 1779026188
+      },
+      {
+        "thread_id": "019e3643-7a7f-7420-8348-4b731b308e44",
+        "log_count": 1000,
+        "min_ts": 1779027115,
+        "max_ts": 1779027118
+      },
+      {
+        "thread_id": "019e3648-21b2-7392-921e-183002fa73e8",
+        "log_count": 1000,
+        "min_ts": 1779027246,
+        "max_ts": 1779027273
+      },
+      {
+        "thread_id": "019e364d-e03a-7312-87cb-e6f14f70518b",
+        "log_count": 1000,
+        "min_ts": 1779027688,
+        "max_ts": 1779027694
+      },
+      {
+        "thread_id": "019e3d7d-fbd5-7fe3-ad79-598c0d3953cd",
+        "log_count": 1000,
+        "min_ts": 1779148293,
+        "max_ts": 1779150100
+      },
+      {
+        "thread_id": "019e42f4-004e-7473-9221-e12b9f291945",
+        "log_count": 1000,
+        "min_ts": 1779239942,
+        "max_ts": 1779241748
+      },
+      {
+        "thread_id": "019e4a8e-a2eb-7253-8775-6909140eb30b",
+        "log_count": 1000,
+        "min_ts": 1779367401,
+        "max_ts": 1779369722
+      },
+      {
+        "thread_id": "019e4b3a-d32c-7341-bf96-e3879ec8d8cf",
+        "log_count": 1000,
+        "min_ts": 1779378753,
+        "max_ts": 1779380560
+      },
+      {
+        "thread_id": "019e4b6d-cf3b-7660-9b9b-32875b6f3f3b",
+        "log_count": 1000,
+        "min_ts": 1779382193,
+        "max_ts": 1779382203
+      },
+      {
+        "thread_id": "019e240a-1e72-78a1-a55a-398b6e081eb8",
+        "log_count": 414,
+        "min_ts": 1778721103,
+        "max_ts": 1778722939
+      },
+      {
+        "thread_id": "019e362b-3a4b-7503-a582-b91d1845b8a0",
+        "log_count": 356,
+        "min_ts": 1779025263,
+        "max_ts": 1779027071
+      },
+      {
+        "thread_id": "019e2c6d-f73b-7cd2-bfbe-38acd878a419",
+        "log_count": 350,
+        "min_ts": 1778861864,
+        "max_ts": 1778863674
+      },
+      {
+        "thread_id": "019e3650-53d8-79a0-a3ad-9403869227b6",
+        "log_count": 328,
+        "min_ts": 1779027694,
+        "max_ts": 1779027699
+      },
+      {
+        "thread_id": "019e3647-8959-7331-af90-dcaae6aae181",
+        "log_count": 170,
+        "min_ts": 1779027118,
+        "max_ts": 1779027122
+      },
+      {
+        "thread_id": "019e3d80-a0d2-7720-a94a-1fd14441ecaf",
+        "log_count": 170,
+        "min_ts": 1779148300,
+        "max_ts": 1779150105
+      },
+      {
+        "thread_id": "019e1d12-b7d3-7473-a10d-4e0cf9a9339b",
+        "log_count": 166,
+        "min_ts": 1778604226,
+        "max_ts": 1778606029
+      },
+      {
+        "thread_id": "019e2712-124f-7d32-8bb9-801c21471e27",
+        "log_count": 146,
+        "min_ts": 1778771956,
+        "max_ts": 1778773767
+      },
+      {
+        "thread_id": "019e31b1-06dc-78f1-8c42-865e95c8f563",
+        "log_count": 74,
+        "min_ts": 1778950145,
+        "max_ts": 1778951952
+      },
+      {
+        "thread_id": "019e42f7-10cd-7241-a3e4-f40e7c93fc1a",
+        "log_count": 74,
+        "min_ts": 1779239948,
+        "max_ts": 1779241752
+      },
+      {
+        "thread_id": "019e4b3d-28de-7f50-b51c-f6d62e4e02c6",
+        "log_count": 74,
+        "min_ts": 1779378760,
+        "max_ts": 1779380564
+      },
+      {
+        "thread_id": "019e270c-60ba-7bb3-af3a-dec794e3b874",
+        "log_count": 70,
+        "min_ts": 1778771583,
+        "max_ts": 1778773388
+      },
+      {
+        "thread_id": "019e2715-7697-7693-b55a-8d36520948da",
+        "log_count": 70,
+        "min_ts": 1778772178,
+        "max_ts": 1778773982
+      }
+    ]
+  }
+}

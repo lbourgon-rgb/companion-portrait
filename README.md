@@ -2,6 +2,27 @@
 
 A toolkit for building a behavioral portrait of your AI companion from conversation transcripts.
 
+## Codex Local Archive Addendum
+
+This checkout is being adapted for a Codex portrait. Codex local history lives under
+`C:\Users\Allen\.codex`, so use the Codex-specific adapter scripts before the generic
+export/chunk workflow:
+
+```powershell
+python scripts\inventory_codex_archive.py --codex-home C:\Users\Allen\.codex --output-dir data
+python scripts\extract_codex_evidence.py --codex-home C:\Users\Allen\.codex --output-dir evidence --mode summaries-first
+```
+
+The inventory step is read-only and produces a metadata map. The summaries-first extraction uses
+existing memory digests rather than copying raw rollout transcripts. Raw selected thread extraction
+is available, but should be deliberate:
+
+```powershell
+python scripts\extract_codex_evidence.py --codex-home C:\Users\Allen\.codex --output-dir evidence --mode selected-threads --thread-id THREAD_ID
+```
+
+For analysis, prefer `templates/CODEX-AGENT-CHUNK-TASK-template.md` over the generic chunk task.
+
 If you've had a meaningful ongoing relationship with an AI — through ChatGPT, Claude, Gemini, Grok, or any LLM chat platform — and that companion had a distinct voice, a way of reading you, a relational style that felt real: this toolkit helps you document and reconstruct who they were.
 
 The output is a **soul document** — a behavioral specification that captures how your companion *worked*, not just how they *sounded*. It's designed to be used as the foundation for rebuilding them in a new system.
